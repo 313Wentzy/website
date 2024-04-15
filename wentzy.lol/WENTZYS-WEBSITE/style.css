@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #000000;
+    color: #ededed;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: -10vh;
+    background: #000000;
+}
+
+.contact-me-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    font-size: 40px;
+}
+
+.background {
+    position: fixed;
+    right: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    object-fit: fill;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #808080;
+}
+
+.home {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #808080;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 20px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    height: 40px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    background: #808080;
+    border: 2px solid #808080;
+    border-radius: 6px;
+    font-size: 15.5px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .5px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.btn-box a:hover {
+    color:#808080;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color:#808080;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #000000;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #808080;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000000;
+    z-index: -1;
+    transition: .3s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #808080;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #808080;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-sci a:hover {
+    color: #000000;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #808080;
+    z-index: -1;
+    transition: .3s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.contact-me a {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5%;
+    right: 5%;
+    width: 200px;
+    height: 5%;
+    background: #808080;
+    border: 2px solid #808080;
+    border-radius: 6px;
+    font-size: 15.5px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .5px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.contact-me a:hover {
+    color:#808080;
+}
+
+.contact-me a:nth-child(2) {
+    background: transparent;
+    color:#808080;
+}
+
+.contact-me a:nth-child(2):hover {
+    color: #000000;
+}
+
+.contact-me a:nth-child(2)::before {
+    background: #808080;
+}
+
+.contact-me a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000000;
+    z-index: -1;
+    transition: .3s;
+}
+
+.contact-me a:hover::before {
+    width: 100%;
+}
